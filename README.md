@@ -18,7 +18,7 @@ installation folder.
 
 install the required packages by running:
 ```bash
-pip install tabula
+pip install tabula-py
 pip install pandas
 ```
 
