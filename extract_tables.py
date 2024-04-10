@@ -57,7 +57,13 @@ print("Finished extracting tables.")
 
 # Clean the data
 df = pd.read_csv(OUTPUT_PATH, encoding="utf-8")
-df = df.replace('\r\n', ' ', regex=True)
+
+df = (df.replace('\r\n', ' ', regex=True)
+      .replace('\\(', ']', regex=True)
+      .replace('\\)', '( ', regex=True)
+      .replace(']', ')', regex=True))
+
+
 df.to_csv(OUTPUT_PATH, index=False, encoding="utf-8")
 
 print("Finished cleaning data.")
