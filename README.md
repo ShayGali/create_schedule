@@ -4,7 +4,7 @@ This is a small project that creates a schedule for my university courses.
 
 my university gives me the lectures schedule in a pdf file, table format, so I convert it to a csv file and then I `tkinter` to create a schedule.
 
-| original                         | output                             |
+| input                            | output                             |
 |----------------------------------|------------------------------------|
 | ![original](assets/original.png) | ![calendar](./assets/calendar.png) |
 
